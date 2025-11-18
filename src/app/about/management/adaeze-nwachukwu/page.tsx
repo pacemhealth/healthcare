@@ -1,0 +1,133 @@
+import { Button } from '../../../../components/ui/button';
+import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
+import { Mail, Linkedin, ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { SEOHead } from '../../../../components/SEOHead';
+
+export default function AdaezeNwachukwuBio() {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Adaeze Nwachukwu",
+    "jobTitle": "Director of Quality & Regulatory Affairs - Africa",
+    "worksFor": {"@type": "Organization", "name": "Pacem Health"}
+  };
+
+  return (
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-[#0d1f0d] via-[#1a3a1a] to-[#0d1f0d]">
+      <SEOHead
+        title="Adaeze Nwachukwu - Director of Quality & Regulatory Affairs - Africa | Pacem Health Leadership"
+        description="Meet Adaeze Nwachukwu, Director of Quality & Regulatory Affairs - Africa at Pacem Health. Expert in regulatory compliance, quality standards, and medicines regulatory authority engagement."
+        keywords={[
+          'Adaeze Nwachukwu Pacem Health',
+          'Director Quality Regulatory Affairs Africa',
+          'regulatory compliance',
+          'quality assurance Africa',
+          'medicines regulatory authority'
+        ]}
+        structuredData={personSchema}
+      />
+      <div className="border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex items-center gap-2 text-sm text-white/70">
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <Link to="/about" className="hover:text-white transition-colors">About</Link>
+            <span>/</span>
+            <Link to="/about/management" className="hover:text-white transition-colors">Management</Link>
+            <span>/</span>
+            <span className="text-white">Adaeze Nwachukwu</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <Link to="/about/management">
+          <Button variant="ghost" className="text-white hover:text-white hover:bg-white/10 -ml-4">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Management
+          </Button>
+        </Link>
+      </div>
+
+      <section className="py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-white mb-4">
+            Adaeze Nwachukwu
+          </h1>
+          <p className="text-xl md:text-2xl text-white/80">
+            Director of Quality & Regulatory Affairs - Africa
+          </p>
+        </div>
+      </section>
+
+      <section className="pb-16 md:pb-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+            <div className="space-y-6 text-white/90">
+              <p className="text-base md:text-lg leading-relaxed">
+                Adaeze Nwachukwu serves as Director of Quality & Regulatory Affairs - Africa at Pacem Health, ensuring compliance with national and regional regulatory requirements across all African markets. Based in Abuja, Nigeria, she maintains quality standards and regulatory compliance across all product categories with deep expertise in African regulatory systems.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                With over 18 years of experience in pharmaceutical quality assurance and regulatory affairs, Adaeze has worked at national medicines regulatory authorities and WHO pre-qualification programs. Her expertise spans regulatory submissions, quality management systems, Good Manufacturing Practice (GMP) compliance, and medicines regulatory harmonization across Africa.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Prior to joining Pacem Health, Adaeze served as Senior Regulatory Affairs Manager at the WHO African Medicines Regulatory Harmonization (AMRH) Program, where she supported national regulatory authorities with capacity building, regulatory harmonization initiatives, and implementation of international quality standards. She previously held positions at Nigeria's National Agency for Food and Drug Administration and Control (NAFDAC) and worked as a regulatory consultant for multinational pharmaceutical companies.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Adaeze's expertise includes pharmaceutical product registration, regulatory dossier preparation and submission, GMP inspection preparation and remediation, quality management system implementation, pharmacovigilance and post-market surveillance, regulatory intelligence across African markets, and regulatory authority engagement. She has successfully secured product registrations across 35+ African countries.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                At Pacem Health, Adaeze leads all quality and regulatory functions. She manages product registration processes across African markets, ensures compliance with national and regional regulatory requirements, coordinates with medicines regulatory authorities, oversees quality assurance for all product categories, implements quality control systems, manages pharmacovigilance programs, and ensures adherence to Good Distribution Practice (GDP) standards.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Adaeze holds a Bachelor's degree in Pharmacy from the University of Nigeria, Nsukka, and a Master's degree in Pharmaceutical Quality Assurance from the University of Ibadan. She is a registered pharmacist in Nigeria and holds professional certifications in regulatory affairs and quality management. She has completed specialized training with WHO, EMA, and FDA on international regulatory standards.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                She maintains strong relationships with medicines regulatory authorities across Africa and serves as a technical expert on multiple regional regulatory harmonization initiatives including the African Medicines Agency (AMA) development process. Adaeze is a recognized authority on African pharmaceutical regulation and regularly conducts training for regulatory professionals. She has published extensively on regulatory harmonization and quality assurance in African pharmaceutical systems.
+              </p>
+            </div>
+
+            <div className="lg:sticky lg:top-8 h-fit">
+              <div className="relative">
+                <ImageWithFallback
+                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwd29tYW4lMjBwaGFybWFjaXN0fGVufDF8fHx8MTc2MTAyMDc4M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Adaeze Nwachukwu"
+                  className="w-full rounded-lg shadow-2xl"
+                />
+                <div className="mt-4 text-sm text-white/60 text-right">
+                  Adaeze Nwachukwu
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-4">
+            <div className="flex items-center gap-3 text-white/80 hover:text-white transition-colors">
+              <Mail className="h-5 w-5" />
+              <a href="mailto:adaeze.nwachukwu@pacemhealth.com" className="text-base md:text-lg">
+                adaeze.nwachukwu@pacemhealth.com
+              </a>
+            </div>
+            <div className="flex items-center gap-3 text-white/80 hover:text-white transition-colors">
+              <Linkedin className="h-5 w-5" />
+              <a href="#" className="text-base md:text-lg">
+                Connect with Adaeze Nwachukwu
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

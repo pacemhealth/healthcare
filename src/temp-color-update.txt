@@ -1,0 +1,1 @@
+I'll read each subpage file completely, then rewrite it with all color changes applied in one operation.
