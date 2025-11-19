@@ -3,7 +3,7 @@ import { Menu } from 'lucide-react';
 import { Button } from './ui/button';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 import { Separator } from './ui/separator';
-import pacemHealthLogo from 'figma:asset/f142cfcd435fe5b0416adca4ffe4fb295f9fb39c.png';
+//import pacemHealthLogo from 'figma:asset/f142cfcd435fe5b0416adca4ffe4fb295f9fb39c.png';
 import ServicesMegaMenu from './ServicesMegaMenu';
 
 export default function Navigation() {
@@ -40,11 +40,8 @@ export default function Navigation() {
           <div className="flex justify-between items-center h-20 sm:h-24">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <img 
-                src={pacemHealthLogo}
-                alt="Pacem Health Inc."
-                className="h-14 sm:h-16 w-auto"
-              />
+              
+              <span className="text-xl font-bold">Pacem Health</span>
             </Link>
 
             {/* Desktop Navigation */}
