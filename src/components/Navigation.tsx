@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import { Button } from './ui/button';
@@ -7,26 +8,27 @@ import { Separator } from './ui/separator';
 import ServicesMegaMenu from './ServicesMegaMenu';
 
 export default function Navigation() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="sticky top-0 z-50">
       {/* Upper Navbar - Utility Links */}
       <div className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-end items-center h-10">
-            <div className="hidden md:flex items-center gap-6 text-xs">
-              <Link to="/careers" className="hover:text-[#00A0DC] transition">
+            <div className="hidden md:flex items-center gap-6 text-xs ">
+              <Link to="/careers" className="hover:text-[#00A0DC] transition text-blue-500">
                 Careers
               </Link>
-              <Link to="/investors" className="hover:text-[#00A0DC] transition">
+              <Link to="/investors" className="hover:text-[#00A0DC] transition text-blue-500">
                 Investors
               </Link>
-              <Link to="/news" className="hover:text-[#00A0DC] transition">
+              <Link to="/news" className="hover:text-[#00A0DC] transition text-blue-500">
                 News & Media
               </Link>
-              <Link to="/insights" className="hover:text-[#00A0DC] transition">
+              <Link to="/insights" className="hover:text-[#78c9e6] transition text-blue-500">
                 Insights
               </Link>
-              <Link to="/support/general-inquiry" className="hover:text-[#00A0DC] transition">
+              <Link to="/support/general-inquiry" className="hover:text-[#00A0DC] transition text-blue-500">
                 Contact Us
               </Link>
             </div>
@@ -69,7 +71,7 @@ export default function Navigation() {
 
             {/* Mobile Navigation */}
             <div className="md:hidden">
-              <Sheet>
+              <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
                   <Button variant="ghost" size="icon">
                     <Menu className="h-6 w-6" />
@@ -77,54 +79,54 @@ export default function Navigation() {
                 </SheetTrigger>
                 <SheetContent>
                   <div className="flex flex-col space-y-4 mt-8">
-                    {/* Utility Links Section */}
+                    {/* Main Navigation Links */}
                     <div className="pb-4">
-                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-3">Quick Links</p>
-                      <div className="flex flex-col space-y-3">
-                        <Link to="/careers" className="text-sm hover:text-[#00A0DC] transition">
-                          Careers
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-3 pl-4">Main Menu</p>
+                      <div className="flex flex-col space-y-3 pl-6">
+                        <Link to="/products" className="text-base hover:text-[#00A0DC] transition" onClick={() => setIsOpen(false)}>
+                          Products
                         </Link>
-                        <Link to="/investors" className="text-sm hover:text-[#00A0DC] transition">
-                          Investors
+                        <Link to="/services" className="text-base hover:text-[#00A0DC] transition" onClick={() => setIsOpen(false)}>
+                          Services
                         </Link>
-                        <Link to="/news" className="text-sm hover:text-[#00A0DC] transition">
-                          News & Media
+                        <Link to="/our-approach" className="text-base hover:text-[#00A0DC] transition" onClick={() => setIsOpen(false)}>
+                          Our Approach
                         </Link>
-                        <Link to="/support/general-inquiry" className="text-sm hover:text-[#00A0DC] transition">
-                          Contact Us
+                        <Link to="/programs" className="text-base hover:text-[#00A0DC] transition" onClick={() => setIsOpen(false)}>
+                          Programs
+                        </Link>
+                        <Link to="/insights" className="text-base hover:text-[#00A0DC] transition" onClick={() => setIsOpen(false)}>
+                          Insights
+                        </Link>
+                        <Link to="/support" className="text-base hover:text-[#00A0DC] transition" onClick={() => setIsOpen(false)}>
+                          Support
+                        </Link>
+                        <Link to="/shop" className="text-base hover:text-[#00A0DC] transition" onClick={() => setIsOpen(false)}>
+                          Shop
+                        </Link>
+                        <Link to="/about" className="text-base hover:text-[#00A0DC] transition" onClick={() => setIsOpen(false)}>
+                          About
                         </Link>
                       </div>
                     </div>
 
                     <Separator />
 
-                    {/* Main Navigation Links */}
+                    {/* Utility Links Section */}
                     <div className="pt-2">
-                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-3">Main Menu</p>
-                      <div className="flex flex-col space-y-3">
-                        <Link to="/products" className="text-base hover:text-[#00A0DC] transition">
-                          Products
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-3 pl-4">Quick Links</p>
+                      <div className="flex flex-col space-y-3 pl-6 ">
+                        <Link to="/careers" className="text-sm hover:text-[#00A0DC] transition text-blue-500" onClick={() => setIsOpen(false)}>
+                          Careers
                         </Link>
-                        <Link to="/services" className="text-base hover:text-[#00A0DC] transition">
-                          Services
+                        <Link to="/investors" className="text-sm hover:text-[#00A0DC] transition text-blue-500" onClick={() => setIsOpen(false)}>
+                          Investors
                         </Link>
-                        <Link to="/our-approach" className="text-base hover:text-[#00A0DC] transition">
-                          Our Approach
+                        <Link to="/news" className="text-sm hover:text-[#00A0DC] transition text-blue-500" onClick={() => setIsOpen(false)}>
+                          News & Media
                         </Link>
-                        <Link to="/programs" className="text-base hover:text-[#00A0DC] transition">
-                          Programs
-                        </Link>
-                        <Link to="/insights" className="text-base hover:text-[#00A0DC] transition">
-                          Insights
-                        </Link>
-                        <Link to="/support" className="text-base hover:text-[#00A0DC] transition">
-                          Support
-                        </Link>
-                        <Link to="/shop" className="text-base hover:text-[#00A0DC] transition">
-                          Shop
-                        </Link>
-                        <Link to="/about" className="text-base hover:text-[#00A0DC] transition">
-                          About
+                        <Link to="/support/general-inquiry" className="text-sm hover:text-[#00A0DC] transition text-blue-500" onClick={() => setIsOpen(false)}>
+                          Contact Us
                         </Link>
                       </div>
                     </div>
