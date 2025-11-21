@@ -23,7 +23,7 @@ import customerStatementImage from '../assets/ab8fa8acb8e939ad1109a052acad1bb0a0
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { SEOHead } from '../components/SEOHead';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
@@ -47,10 +47,27 @@ import {
   Award,
   ChevronRight,
   ChevronLeft,
-  BarChart3
+  BarChart3,
+  Pause,
+  Play
 } from 'lucide-react';
 
 export default function HomePage() {
+  const [isPlaying, setIsPlaying] = useState(true);
+  const autoplayPlugin = useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: false })
+  );
+
+  const toggleAutoplay = () => {
+    if (isPlaying) {
+      autoplayPlugin.current.stop();
+      setIsPlaying(false);
+    } else {
+      autoplayPlugin.current.play();
+      setIsPlaying(true);
+    }
+  };
+
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -97,127 +114,89 @@ export default function HomePage() {
       />
       
       {/* Hero Section */}
-      <section className="relative overflow-hidden min-h-[600px] sm:min-h-[700px] bg-white">
+      <section className="relative overflow-hidden min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-[800px] bg-white" aria-label="Hero carousel">
         <Carousel 
           opts={{ loop: true }}
-          plugins={[Autoplay({ delay: 5000 })]}
+          plugins={[autoplayPlugin.current]}
           className="w-full h-full"
         >
           <CarouselContent>
-            <CarouselItem>
-              <div className="relative min-h-[600px] sm:min-h-[700px]">
-                {/* Background Image */}
-                <img
-                  src={heroImage1}
-                  alt="Healthcare professionals collaborating on African health systems transformation"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black/40"></div>
-                
-                {/* Content */}
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 md:py-32 min-h-[600px] sm:min-h-[700px] flex items-center">
-                  <div className="max-w-2xl">
-                    <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8">
-                      Strengthening Healthcare Across Africa
-                    </h1>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <Link to="/about">
-                        <Button size="lg" className="bg-[#5395f0] hover:bg-[#3a7cd6] text-white w-full sm:w-auto">
-                          About Us
-                          <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
-                      </Link>
-                      <Link to="/products">
-                        <Button size="lg" className="bg-[#003057] hover:bg-[#002445] text-white w-full sm:w-auto">
-                          Explore Our Products
-                          <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
-                      </Link>
+            {[
+              {
+                image: heroImage1,
+                alt: "Healthcare professionals collaborating on African health systems transformation",
+                bannerTitle: "Pacem Health Q4'25 Impact Report",
+                bannerLink: "/insights/reports"
+              },
+              {
+                image: heroImage2,
+                alt: "African healthcare professional administering IV treatment with compassionate patient care",
+                bannerTitle: "New Digital Health Platform Launch",
+                bannerLink: "/advanced-solutions/digital-health-platforms"
+              },
+              {
+                image: heroImage3,
+                alt: "Diverse international healthcare team partnership in modern African hospital facility",
+                bannerTitle: "Partnership with African Development Bank",
+                bannerLink: "/news/afdb-partnership"
+              }
+            ].map((slide, index) => (
+              <CarouselItem key={index}>
+                <div className="relative min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-[800px]">
+                  {/* Background Image */}
+                  <img
+                    src={slide.image}
+                    alt={slide.alt}
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+                    loading={index === 0 ? "eager" : "lazy"}
+                    fetchPriority={index === 0 ? "high" : "low"}
+                  />
+                  {/* Subtle Dark Overlay - lighter for better visibility */}
+                  <div className="absolute inset-0 bg-black/30 sm:bg-black/35 md:bg-black/40" aria-hidden="true"></div>
+                  
+                  {/* Main Content - Positioned in center/upper area */}
+                  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 md:pt-24 lg:pt-32 pb-32 sm:pb-40 md:pb-48 min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center">
+                    <div className="max-w-2xl w-full text-center sm:text-left">
+                      <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-5 sm:mb-6 md:mb-8 leading-tight sm:leading-tight md:leading-normal font-semibold drop-shadow-lg">
+                        Strengthening Healthcare Across Africa
+                      </h1>
+                      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center sm:items-start">
+                        <Link to="/about" aria-label="Learn more about Pacem Health">
+                          <Button size="lg" className="bg-[#5395f0] hover:bg-[#3a7cd6] text-white w-full sm:w-auto min-h-[48px] sm:min-h-[52px] px-6 sm:px-8 text-base sm:text-lg font-medium shadow-lg hover:shadow-xl transition-all">
+                            About Us
+                            <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+                          </Button>
+                        </Link>
+                        <Link to="/products" aria-label="Explore our product catalog">
+                          <Button size="lg" className="bg-[#003057] hover:bg-[#002445] text-white w-full sm:w-auto min-h-[48px] sm:min-h-[52px] px-6 sm:px-8 text-base sm:text-lg font-medium shadow-lg hover:shadow-xl transition-all">
+                            Explore Our Products
+                            <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+                          </Button>
+                        </Link>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </CarouselItem>
-            
-            <CarouselItem>
-              <div className="relative min-h-[600px] sm:min-h-[700px]">
-                {/* Background Image */}
-                <img
-                  src={heroImage2}
-                  alt="African healthcare professional administering IV treatment with compassionate patient care"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black/40"></div>
-                
-                {/* Content */}
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 md:py-32 min-h-[600px] sm:min-h-[700px] flex items-center">
-                  <div className="max-w-2xl">
-                    <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8">
-                      Strengthening Healthcare Across Africa
-                    </h1>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <Link to="/about">
-                        <Button size="lg" className="bg-[#5395f0] hover:bg-[#3a7cd6] text-white w-full sm:w-auto">
-                          About Us
-                          <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
-                      </Link>
-                      <Link to="/products">
-                        <Button size="lg" className="bg-[#003057] hover:bg-[#002445] text-white w-full sm:w-auto">
-                          Explore Our Products
-                          <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CarouselItem>
 
-            <CarouselItem>
-              <div className="relative min-h-[600px] sm:min-h-[700px]">
-                {/* Background Image */}
-                <img
-                  src={heroImage3}
-                  alt="Diverse international healthcare team partnership in modern African hospital facility"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black/40"></div>
-                
-                {/* Content */}
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 md:py-32 min-h-[600px] sm:min-h-[700px] flex items-center">
-                  <div className="max-w-2xl">
-                    <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8">
-                      Strengthening Healthcare Across Africa
-                    </h1>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <Link to="/about">
-                        <Button size="lg" className="bg-[#5395f0] hover:bg-[#3a7cd6] text-white w-full sm:w-auto">
-                          About Us
-                          <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
-                      </Link>
-                      <Link to="/products">
-                        <Button size="lg" className="bg-[#003057] hover:bg-[#002445] text-white w-full sm:w-auto">
-                          Explore Our Products
-                          <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
-                      </Link>
+                  {/* Bottom Banner Overlay - Similar to GE Healthcare */}
+                  {/* <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-[#5395f0] to-[#3a7cd6] sm:from-[#5395f0] sm:to-[#003057] text-white z-10">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 md:py-6">
+                      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+                        <div className="flex-1">
+                          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-1 sm:mb-2">
+                            {slide.bannerTitle}
+                          </h3>
+                        </div>
+                        <Link to={slide.bannerLink} className="flex items-center text-white hover:text-white/90 transition-colors group">
+                          <span className="text-sm sm:text-base md:text-lg font-medium mr-2">Learn more</span>
+                          <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                        </Link>
+                      </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
-              </div>
-            </CarouselItem>
+              </CarouselItem>
+            ))}
           </CarouselContent>
-          <CarouselPrevious className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2">
-            <ChevronLeft className="h-5 w-5" />
-          </CarouselPrevious>
-          <CarouselNext className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2">
-            <ChevronRight className="h-5 w-5" />
-          </CarouselNext>
         </Carousel>
       </section>
 
@@ -454,12 +433,12 @@ export default function HomePage() {
               </CarouselContent>
               
               {/* Navigation Arrows */}
-              <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white hover:bg-gray-100 border-2 border-gray-300 shadow-lg">
+              {/* <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white hover:bg-gray-100 border-2 border-gray-300 shadow-lg">
                 <ChevronLeft className="h-6 w-6 text-[#003057]" />
               </CarouselPrevious>
               <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white hover:bg-gray-100 border-2 border-gray-300 shadow-lg">
                 <ChevronRight className="h-6 w-6 text-[#003057]" />
-              </CarouselNext>
+              </CarouselNext> */}
             </Carousel>
           </div>
         </div>
