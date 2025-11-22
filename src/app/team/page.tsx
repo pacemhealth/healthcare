@@ -119,14 +119,16 @@ export default function TeamPage() {
             <h2 className="text-3xl md:text-4xl mb-4">
               Our Advisory Team
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            {/* <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Senior advisors who guide our strategic approach to African health systems transformation
-            </p>
+            </p> */}
+            <h1 className="text-2xl md:text-3xl mb-4 text-center ">Coming Soon</h1>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
+            
             {/* Advisory Team Member 1 */}
-            <Card className="hover:shadow-lg transition-all">
+            {/* <Card className="hover:shadow-lg transition-all">
               <CardContent className="p-8 text-center">
                 <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#4B2991] to-[#3d1e7d] flex items-center justify-center mx-auto mb-6">
                   <Users className="h-12 w-12 text-white" />
@@ -151,10 +153,10 @@ export default function TeamPage() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Advisory Team Member 2 */}
-            <Card className="hover:shadow-lg transition-all">
+            {/* <Card className="hover:shadow-lg transition-all">
               <CardContent className="p-8 text-center">
                 <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#7C944B] to-[#6c843e] flex items-center justify-center mx-auto mb-6">
                   <TrendingUp className="h-12 w-12 text-white" />
@@ -179,10 +181,10 @@ export default function TeamPage() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Advisory Team Member 3 */}
-            <Card className="hover:shadow-lg transition-all">
+            {/* <Card className="hover:shadow-lg transition-all">
               <CardContent className="p-8 text-center">
                 <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#4B2991] to-[#3d1e7d] flex items-center justify-center mx-auto mb-6">
                   <DollarSign className="h-12 w-12 text-white" />
@@ -207,12 +209,13 @@ export default function TeamPage() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
 
           <div className="mt-12 text-center">
             <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-              Our advisory team members are carefully selected for each engagement based on regional expertise, technical specialization, and proven track record in African health systems. We match the right advisors to your specific transformation challenges.
+              
+              {/* Our advisory team members are carefully selected for each engagement based on regional expertise, technical specialization, and proven track record in African health systems. We match the right advisors to your specific transformation challenges. */}
             </p>
           </div>
         </div>

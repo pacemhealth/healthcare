@@ -61,7 +61,7 @@ export default function ProgramsPage() {
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-8 text-center">
-                <Target className="h-12 w-12 text-[#0033A0] mx-auto mb-4" />
+                {/* <Target className="h-12 w-12 text-[#0033A0] mx-auto mb-4" /> */}
                 <h3 className="text-xl mb-3">Strategic Investment</h3>
                 <p className="text-muted-foreground">
                   Programs are business strategy, not charity—generating demand, building trust, and creating competitive moats
@@ -71,7 +71,7 @@ export default function ProgramsPage() {
 
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-8 text-center">
-                <TrendingUp className="h-12 w-12 text-[#00A0DC] mx-auto mb-4" />
+                {/* <TrendingUp className="h-12 w-12 text-[#00A0DC] mx-auto mb-4" /> */}
                 <h3 className="text-xl mb-3">Financial Sustainability</h3>
                 <p className="text-muted-foreground">
                   Blended finance model combining commercial revenue, government contracts, and grants for long-term viability
@@ -81,7 +81,7 @@ export default function ProgramsPage() {
 
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-8 text-center">
-                <Heart className="h-12 w-12 text-[#0033A0] mx-auto mb-4" />
+                {/* <Heart className="h-12 w-12 text-[#0033A0] mx-auto mb-4" /> */}
                 <h3 className="text-xl mb-3">Measurable Impact</h3>
                 <p className="text-muted-foreground">
                   Rigorous evaluation and data-driven decision making demonstrate real health outcomes and return on investment

@@ -297,11 +297,11 @@ export default function Management() {
                 </TabsContent>
               </Tabs>
 
-              <div className="mt-10 p-6 bg-gradient-to-r from-gray-50 to-white rounded-lg border-l-4 border-[#00A0DC]">
+              {/* <div className="mt-10 p-6 bg-gradient-to-r from-gray-50 to-white rounded-lg border-l-4 border-[#00A0DC]">
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed italic">
                   Every Pacem Health team member—regardless of role or seniority—has the opportunity and responsibility to lead. By embracing IMPACT, we collectively drive the transformation African healthcare systems need and deserve.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -312,17 +312,18 @@ export default function Management() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 md:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl mb-6">U.S. Leadership</h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl">
-              The Pacem Health U.S. Leadership team is committed to serving the interests of the company and achieving sustainable growth in company value. In the following, you will also find further information on the management of our businesses.
-            </p>
+                {/* <p className="text-lg md:text-xl text-muted-foreground max-w-3xl">
+                  The Pacem Health U.S. Leadership team is committed to serving the interests of the company and achieving sustainable growth in company value. In the following, you will also find further information on the management of our businesses.
+                </p> */}
+                <h1 className="text-2xl md:text-3xl mb-4 text-center ">Coming Soon</h1>
           </div>
 
           {/* U.S. Leadership Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {usLeadership.map((leader, index) => (
               <Card key={index} className="hover:shadow-lg transition-all overflow-hidden group">
                 <CardContent className="p-0">
-                  {/* Image */}
+                  {/* Image *
                   <div className="aspect-square relative overflow-hidden bg-gray-100">
                     <ImageWithFallback
                       src={leader.image}
@@ -331,7 +332,7 @@ export default function Management() {
                     />
                   </div>
                   
-                  {/* Content */}
+                  {/* Content 
                   <div className="p-6">
                     <h3 className="text-xl mb-1">{leader.name}</h3>
                     <p className="text-sm text-[#4B2991] mb-4">{leader.title}</p>
@@ -351,7 +352,7 @@ export default function Management() {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -360,17 +361,18 @@ export default function Management() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 md:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl mb-6">Global Leadership</h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl">
+            {/* <p className="text-lg md:text-xl text-muted-foreground max-w-3xl">
               Our Global Leadership team brings together African health systems expertise, regional operational knowledge, and strategic partnerships to drive health system transformation across the continent.
-            </p>
+            </p> */}
+            <h1 className="text-2xl md:text-3xl mb-4 text-center ">Coming Soon</h1>
           </div>
 
           {/* Global Leadership Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {globalLeadership.map((leader, index) => (
               <Card key={index} className="hover:shadow-lg transition-all overflow-hidden group">
                 <CardContent className="p-0">
-                  {/* Image */}
+                  {/* Image *
                   <div className="aspect-square relative overflow-hidden bg-gray-100">
                     <ImageWithFallback
                       src={leader.image}
@@ -379,7 +381,7 @@ export default function Management() {
                     />
                   </div>
                   
-                  {/* Content */}
+                  {/* Content 
                   <div className="p-6">
                     <h3 className="text-xl mb-1">{leader.name}</h3>
                     <p className="text-sm text-[#7C944B] mb-4">{leader.title}</p>
@@ -399,15 +401,15 @@ export default function Management() {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
 
           {/* Leadership Values Cards */}
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="text-center hover:shadow-lg transition-all">
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-full bg-[#4B2991]/10 flex items-center justify-center mx-auto mb-4">
+                {/* <div className="w-16 h-16 rounded-full bg-[#4B2991]/10 flex items-center justify-center mx-auto mb-4">
                   <Heart className="h-8 w-8 text-[#4B2991]" />
-                </div>
+                </div> */}
                 <h3 className="text-lg mb-2">Mission-Driven Leadership</h3>
                 <p className="text-sm text-muted-foreground">
                   Leaders committed to strengthening Africa's health systems and improving patient outcomes.
@@ -417,9 +419,9 @@ export default function Management() {
 
             <Card className="text-center hover:shadow-lg transition-all">
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-full bg-[#7C944B]/10 flex items-center justify-center mx-auto mb-4">
+                {/* <div className="w-16 h-16 rounded-full bg-[#7C944B]/10 flex items-center justify-center mx-auto mb-4">
                   <Target className="h-8 w-8 text-[#7C944B]" />
-                </div>
+                </div> */}
                 <h3 className="text-lg mb-2">Systems Expertise</h3>
                 <p className="text-sm text-muted-foreground">
                   Deep experience in health system strategy, operations, and sustainable transformation.
@@ -429,9 +431,9 @@ export default function Management() {
 
             <Card className="text-center hover:shadow-lg transition-all">
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-full bg-[#4B2991]/10 flex items-center justify-center mx-auto mb-4">
+                {/* <div className="w-16 h-16 rounded-full bg-[#4B2991]/10 flex items-center justify-center mx-auto mb-4">
                   <Lightbulb className="h-8 w-8 text-[#4B2991]" />
-                </div>
+                </div> */}
                 <h3 className="text-lg mb-2">Innovation Focus</h3>
                 <p className="text-sm text-muted-foreground">
                   Forward-thinking approach to digital health, sustainable solutions, and technology integration.
@@ -475,9 +477,9 @@ export default function Management() {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center">
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-full bg-[#4B2991]/10 flex items-center justify-center mx-auto mb-4">
+                {/* <div className="w-16 h-16 rounded-full bg-[#4B2991]/10 flex items-center justify-center mx-auto mb-4">
                   <Heart className="h-8 w-8 text-[#4B2991]" />
-                </div>
+                </div> */}
                 <h3 className="text-xl mb-3">Human-Centered</h3>
                 <p className="text-sm text-muted-foreground">
                   Every solution we design starts with the needs of patients, healthcare workers, and communities we serve across Africa.
@@ -487,9 +489,9 @@ export default function Management() {
 
             <Card className="text-center">
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-full bg-[#7C944B]/10 flex items-center justify-center mx-auto mb-4">
+                {/* <div className="w-16 h-16 rounded-full bg-[#7C944B]/10 flex items-center justify-center mx-auto mb-4">
                   <Target className="h-8 w-8 text-[#7C944B]" />
-                </div>
+                </div> */}
                 <h3 className="text-xl mb-3">Systems-Focused</h3>
                 <p className="text-sm text-muted-foreground">
                   We think beyond individual products to design comprehensive solutions that strengthen entire health systems.
@@ -499,9 +501,9 @@ export default function Management() {
 
             <Card className="text-center">
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-full bg-[#4B2991]/10 flex items-center justify-center mx-auto mb-4">
+                {/* <div className="w-16 h-16 rounded-full bg-[#4B2991]/10 flex items-center justify-center mx-auto mb-4">
                   <Lightbulb className="h-8 w-8 text-[#4B2991]" />
-                </div>
+                </div> */}
                 <h3 className="text-xl mb-3">Implementation Excellence</h3>
                 <p className="text-sm text-muted-foreground">
                   We combine strategic vision with operational expertise to ensure transformations actually happen and deliver results.

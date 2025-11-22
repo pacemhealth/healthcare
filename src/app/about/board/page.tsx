@@ -110,13 +110,14 @@ export default function BoardOfDirectors() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 md:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl mb-6">Our Board Members</h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl">
+            <h1 className="text-2xl md:text-3xl mb-4 text-center ">Coming Soon</h1>
+            {/* <p className="text-lg md:text-xl text-muted-foreground max-w-3xl">
               Distinguished leaders with complementary expertise in healthcare systems, international development, African markets, and corporate governance.
-            </p>
+            </p> */}
           </div>
 
           {/* Board Members Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {boardMembers.map((member, index) => (
               <Card key={index} className="hover:shadow-lg transition-all overflow-hidden">
                 <CardContent className="p-0">
@@ -151,7 +152,7 @@ export default function BoardOfDirectors() {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -168,9 +169,9 @@ export default function BoardOfDirectors() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <Card className="text-center hover:shadow-lg transition-all">
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-full bg-[#4B2991]/10 flex items-center justify-center mx-auto mb-4">
+                {/* <div className="w-16 h-16 rounded-full bg-[#4B2991]/10 flex items-center justify-center mx-auto mb-4">
                   <Shield className="h-8 w-8 text-[#4B2991]" />
-                </div>
+                </div> */}
                 <h3 className="text-xl mb-3">Strategic Oversight</h3>
                 <p className="text-sm text-muted-foreground">
                   Quarterly board meetings review strategic initiatives, financial performance, risk management, and mission alignment.
@@ -180,9 +181,9 @@ export default function BoardOfDirectors() {
 
             <Card className="text-center hover:shadow-lg transition-all">
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-full bg-[#7C944B]/10 flex items-center justify-center mx-auto mb-4">
+                {/* <div className="w-16 h-16 rounded-full bg-[#7C944B]/10 flex items-center justify-center mx-auto mb-4">
                   <Users className="h-8 w-8 text-[#7C944B]" />
-                </div>
+                </div> */}
                 <h3 className="text-xl mb-3">Stakeholder Accountability</h3>
                 <p className="text-sm text-muted-foreground">
                   Ensures accountability to partners, investors, customers, and the communities we serve across Africa.
@@ -192,9 +193,9 @@ export default function BoardOfDirectors() {
 
             <Card className="text-center hover:shadow-lg transition-all">
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-full bg-[#4B2991]/10 flex items-center justify-center mx-auto mb-4">
+                {/* <div className="w-16 h-16 rounded-full bg-[#4B2991]/10 flex items-center justify-center mx-auto mb-4">
                   <Target className="h-8 w-8 text-[#4B2991]" />
-                </div>
+                </div> */}
                 <h3 className="text-xl mb-3">Mission Alignment</h3>
                 <p className="text-sm text-muted-foreground">
                   Guides company direction to ensure we stay true to our mission of strengthening healthcare across Africa.
@@ -208,9 +209,9 @@ export default function BoardOfDirectors() {
             <h3 className="text-2xl mb-6 text-center">Board Expertise</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#4B2991]/10 flex items-center justify-center flex-shrink-0">
+                {/* <div className="w-10 h-10 rounded-full bg-[#4B2991]/10 flex items-center justify-center flex-shrink-0">
                   <Globe className="h-5 w-5 text-[#4B2991]" />
-                </div>
+                </div> */}
                 <div>
                   <h4 className="mb-1">Healthcare Systems</h4>
                   <p className="text-sm text-muted-foreground">WHO experience, pharmaceutical regulation, health system strengthening</p>
@@ -218,9 +219,9 @@ export default function BoardOfDirectors() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#7C944B]/10 flex items-center justify-center flex-shrink-0">
+                {/* <div className="w-10 h-10 rounded-full bg-[#7C944B]/10 flex items-center justify-center flex-shrink-0">
                   <TrendingUp className="h-5 w-5 text-[#7C944B]" />
-                </div>
+                </div> */}
                 <div>
                   <h4 className="mb-1">Financial Leadership</h4>
                   <p className="text-sm text-muted-foreground">Private equity, healthcare finance, growth-stage companies</p>
@@ -228,9 +229,9 @@ export default function BoardOfDirectors() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#4B2991]/10 flex items-center justify-center flex-shrink-0">
+                {/* <div className="w-10 h-10 rounded-full bg-[#4B2991]/10 flex items-center justify-center flex-shrink-0">
                   <Users className="h-5 w-5 text-[#4B2991]" />
-                </div>
+                </div> */}
                 <div>
                   <h4 className="mb-1">African Markets</h4>
                   <p className="text-sm text-muted-foreground">Regional business networks, government relations, local expertise</p>
@@ -238,9 +239,9 @@ export default function BoardOfDirectors() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#7C944B]/10 flex items-center justify-center flex-shrink-0">
+                {/* <div className="w-10 h-10 rounded-full bg-[#7C944B]/10 flex items-center justify-center flex-shrink-0">
                   <Globe className="h-5 w-5 text-[#7C944B]" />
-                </div>
+                </div> */}
                 <div>
                   <h4 className="mb-1">International Development</h4>
                   <p className="text-sm text-muted-foreground">World Bank, development finance, multilateral partnerships</p>
@@ -248,9 +249,9 @@ export default function BoardOfDirectors() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#4B2991]/10 flex items-center justify-center flex-shrink-0">
+                {/* <div className="w-10 h-10 rounded-full bg-[#4B2991]/10 flex items-center justify-center flex-shrink-0">
                   <Target className="h-5 w-5 text-[#4B2991]" />
-                </div>
+                </div> */}
                 <div>
                   <h4 className="mb-1">Supply Chain Excellence</h4>
                   <p className="text-sm text-muted-foreground">Pharmaceutical distribution, logistics, emerging markets</p>
@@ -258,9 +259,9 @@ export default function BoardOfDirectors() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#7C944B]/10 flex items-center justify-center flex-shrink-0">
+                {/* <div className="w-10 h-10 rounded-full bg-[#7C944B]/10 flex items-center justify-center flex-shrink-0">
                   <Award className="h-5 w-5 text-[#7C944B]" />
-                </div>
+                </div> */}
                 <div>
                   <h4 className="mb-1">Governance & Policy</h4>
                   <p className="text-sm text-muted-foreground">African Union, public policy, corporate governance</p>

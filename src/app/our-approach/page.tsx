@@ -632,9 +632,9 @@ export default function OurApproachPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="border-t-4 border-t-[#0033A0]">
               <CardContent className="p-6">
-                <div className="bg-[#0033A0]/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                {/* <div className="bg-[#0033A0]/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <Eye className="h-6 w-6 text-[#0033A0]" />
-                </div>
+                </div> */}
                 <h3 className="text-xl mb-3">Strategic Vision Grounded in Reality</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   Our strategists have deep implementation experience. We design strategies we know how to execute, ensuring feasibility and sustainability.
@@ -647,9 +647,9 @@ export default function OurApproachPage() {
 
             <Card className="border-t-4 border-t-[#0033A0]">
               <CardContent className="p-6">
-                <div className="bg-[#0033A0]/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                {/* <div className="bg-[#0033A0]/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <Target className="h-6 w-6 text-[#0033A0]" />
-                </div>
+                </div> */}
                 <h3 className="text-xl mb-3">Implementation Guided by Strategy</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   Every implementation decision is guided by strategic objectives. We continuously ask "How does this advance health system goals?"
@@ -662,9 +662,9 @@ export default function OurApproachPage() {
 
             <Card className="border-t-4 border-t-[#0033A0]">
               <CardContent className="p-6">
-                <div className="bg-[#0033A0]/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                {/* <div className="bg-[#0033A0]/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <TrendingUp className="h-6 w-6 text-[#0033A0]" />
-                </div>
+                </div> */}
                 <h3 className="text-xl mb-3">Comprehensive Capabilities</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   Nine integrated services covering the entire health system value chain, from strategy through sustained implementation.
@@ -677,9 +677,9 @@ export default function OurApproachPage() {
 
             <Card className="border-t-4 border-t-[#0033A0]">
               <CardContent className="p-6">
-                <div className="bg-[#0033A0]/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                {/* <div className="bg-[#0033A0]/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <Award className="h-6 w-6 text-[#0033A0]" />
-                </div>
+                </div> */}
                 <h3 className="text-xl mb-3">Local Presence, International Standards</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   Offices in Kenya and Ghana with African teams, combined with international best practices and quality standards.
@@ -692,9 +692,9 @@ export default function OurApproachPage() {
 
             <Card className="border-t-4 border-t-[#0033A0]">
               <CardContent className="p-6">
-                <div className="bg-[#0033A0]/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                {/* <div className="bg-[#0033A0]/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <Handshake className="h-6 w-6 text-[#0033A0]" />
-                </div>
+                </div> */}
                 <h3 className="text-xl mb-3">Long-Term Partnership</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   Multi-year partnerships with continuous support, capacity building, and adaptive management—not one-time transactions.
@@ -722,9 +722,9 @@ export default function OurApproachPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              {/* <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <ClipboardCheck className="h-6 w-6 text-white" />
-              </div>
+              </div> */}
               <h3 className="text-xl mb-3">Evidence-Based Decision Making</h3>
               <p className="text-sm text-white/90">
                 We ground all strategies and decisions in rigorous data analysis, international best practices, and local evidence.
@@ -732,9 +732,9 @@ export default function OurApproachPage() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              {/* <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <Users className="h-6 w-6 text-white" />
-              </div>
+              </div> */}
               <h3 className="text-xl mb-3">Local Ownership & Sustainability</h3>
               <p className="text-sm text-white/90">
                 We design solutions that can be sustained by local teams with domestic resources, building capacity not dependency.
@@ -742,9 +742,9 @@ export default function OurApproachPage() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              {/* <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <Heart className="h-6 w-6 text-white" />
-              </div>
+              </div> */}
               <h3 className="text-xl mb-3">Health Equity & Access</h3>
               <p className="text-sm text-white/90">
                 We prioritize solutions that expand access to quality healthcare for underserved populations and reduce health disparities.
@@ -752,9 +752,9 @@ export default function OurApproachPage() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              {/* <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <Shield className="h-6 w-6 text-white" />
-              </div>
+              </div> */}
               <h3 className="text-xl mb-3">Quality & Patient Safety</h3>
               <p className="text-sm text-white/90">
                 We never compromise on quality or patient safety. Every product, service, and system meets international standards.
@@ -762,9 +762,9 @@ export default function OurApproachPage() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              {/* <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <Scale className="h-6 w-6 text-white" />
-              </div>
+              </div> */}
               <h3 className="text-xl mb-3">Transparency & Accountability</h3>
               <p className="text-sm text-white/90">
                 We operate with full transparency in pricing, partnerships, and performance, holding ourselves accountable to measurable results.
@@ -772,9 +772,9 @@ export default function OurApproachPage() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+              {/* <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <Handshake className="h-6 w-6 text-white" />
-              </div>
+              </div> */}
               <h3 className="text-xl mb-3">Collaboration & Partnership</h3>
               <p className="text-sm text-white/90">
                 We believe in working with governments, donors, NGOs, and private sector to achieve shared health goals together.

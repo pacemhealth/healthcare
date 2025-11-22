@@ -137,7 +137,7 @@ export default function PacemExcellencePage() {
             <Card className="border-t-4 border-t-[#0033A0] hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <Shield className="h-8 w-8 text-[#0033A0]" />
+                  {/* <Shield className="h-8 w-8 text-[#0033A0]" /> */}
                   <h3 className="text-2xl">Quality Testing & Surveillance</h3>
                 </div>
                 <p className="mb-4 text-sm text-[#00A0DC]">Independent Verification for Public Health Protection</p>
@@ -173,7 +173,7 @@ export default function PacemExcellencePage() {
             <Card className="border-t-4 border-t-[#00A0DC] hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <Beaker className="h-8 w-8 text-[#00A0DC]" />
+                  {/* <Beaker className="h-8 w-8 text-[#00A0DC]" /> */}
                   <h3 className="text-2xl">Research Partnerships</h3>
                 </div>
                 <p className="mb-4 text-sm text-[#0033A0]">Advancing Pharmaceutical Science Through Academic Collaboration</p>
@@ -209,7 +209,7 @@ export default function PacemExcellencePage() {
             <Card className="border-t-4 border-t-[#0033A0] hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <GraduationCap className="h-8 w-8 text-[#0033A0]" />
+                  {/* <GraduationCap className="h-8 w-8 text-[#0033A0]" /> */}
                   <h3 className="text-2xl">STEM Education</h3>
                 </div>
                 <p className="mb-4 text-sm text-[#00A0DC]">Inspiring Africa's Next Generation of Scientists</p>
@@ -251,7 +251,7 @@ export default function PacemExcellencePage() {
             <Card className="border-l-4 border-l-[#00A0DC] bg-[#00A0DC]/5">
               <CardContent className="p-8">
                 <div className="flex items-start gap-4">
-                  <Shield className="h-8 w-8 text-[#00A0DC] flex-shrink-0" />
+                  {/* <Shield className="h-8 w-8 text-[#00A0DC] flex-shrink-0" /> */}
                   <div>
                     <h3 className="text-xl mb-3">Independent Quality Surveillance</h3>
                     <p className="text-muted-foreground mb-4">
@@ -283,7 +283,7 @@ export default function PacemExcellencePage() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6 text-center">
-                <Microscope className="h-10 w-10 text-[#0033A0] mx-auto mb-4" />
+                {/* <Microscope className="h-10 w-10 text-[#0033A0] mx-auto mb-4" /> */}
                 <h3 className="text-xl mb-3">Tier 1: Testing Infrastructure</h3>
                 <p className="text-sm text-muted-foreground">
                   Partner with universities with ISO 17025 accredited labs. Share government surveillance contracts and access testing capacity without building all infrastructure.
@@ -293,7 +293,7 @@ export default function PacemExcellencePage() {
 
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6 text-center">
-                <FlaskConical className="h-10 w-10 text-[#00A0DC] mx-auto mb-4" />
+                {/* <FlaskConical className="h-10 w-10 text-[#00A0DC] mx-auto mb-4" /> */}
                 <h3 className="text-xl mb-3">Tier 2: Research Collaboration</h3>
                 <p className="text-sm text-muted-foreground">
                   Joint research on pharmaceutical quality, drug stability, and detection methods. Publications, thought leadership, and WHO partnership opportunities.
@@ -303,7 +303,7 @@ export default function PacemExcellencePage() {
 
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6 text-center">
-                <GraduationCap className="h-10 w-10 text-[#0033A0] mx-auto mb-4" />
+                {/* <GraduationCap className="h-10 w-10 text-[#0033A0] mx-auto mb-4" /> */}
                 <h3 className="text-xl mb-3">Tier 3: Talent Pipeline</h3>
                 <p className="text-sm text-muted-foreground">
                   Student internships, graduate research projects, and the Pacem Science Scholars Program create future talent pipeline and brand building.
@@ -338,7 +338,7 @@ export default function PacemExcellencePage() {
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <Shield className="h-6 w-6 text-[#0033A0] flex-shrink-0" />
+                  {/* <Shield className="h-6 w-6 text-[#0033A0] flex-shrink-0" /> */}
                   <div>
                     <h3 className="text-lg mb-2">Government Quality Surveillance</h3>
                     <p className="text-sm text-muted-foreground">
@@ -352,7 +352,7 @@ export default function PacemExcellencePage() {
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <Microscope className="h-6 w-6 text-[#00A0DC] flex-shrink-0" />
+                  {/* <Microscope className="h-6 w-6 text-[#00A0DC] flex-shrink-0" /> */}
                   <div>
                     <h3 className="text-lg mb-2">Post-Market Surveillance Studies</h3>
                     <p className="text-sm text-muted-foreground">
@@ -366,7 +366,7 @@ export default function PacemExcellencePage() {
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <Beaker className="h-6 w-6 text-[#0033A0] flex-shrink-0" />
+                  {/* <Beaker className="h-6 w-6 text-[#0033A0] flex-shrink-0" /> */}
                   <div>
                     <h3 className="text-lg mb-2">Advanced Laboratory Testing</h3>
                     <p className="text-sm text-muted-foreground">
@@ -380,7 +380,7 @@ export default function PacemExcellencePage() {
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <Target className="h-6 w-6 text-[#00A0DC] flex-shrink-0" />
+                  {/* <Target className="h-6 w-6 text-[#00A0DC] flex-shrink-0" /> */}
                   <div>
                     <h3 className="text-lg mb-2">Mobile Field Testing</h3>
                     <p className="text-sm text-muted-foreground">
@@ -409,7 +409,7 @@ export default function PacemExcellencePage() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-8">
-                <Award className="h-10 w-10 text-[#0033A0] mx-auto mb-4" />
+                {/* <Award className="h-10 w-10 text-[#0033A0] mx-auto mb-4" /> */}
                 <h3 className="text-xl mb-3 text-center">Pacem Science Scholars Program</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Phased growth: 5 scholars (Year 1) → 12 scholars (Year 2) → 20 scholars (Year 3)</li>
@@ -424,7 +424,7 @@ export default function PacemExcellencePage() {
 
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-8">
-                <GraduationCap className="h-10 w-10 text-[#00A0DC] mx-auto mb-4" />
+                {/* <GraduationCap className="h-10 w-10 text-[#00A0DC] mx-auto mb-4" /> */}
                 <h3 className="text-xl mb-3 text-center">Pan-African Health Science Fair</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Annual competition for secondary and university students</li>
@@ -439,7 +439,7 @@ export default function PacemExcellencePage() {
 
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-8">
-                <Microscope className="h-10 w-10 text-[#0033A0] mx-auto mb-4" />
+                {/* <Microscope className="h-10 w-10 text-[#0033A0] mx-auto mb-4" /> */}
                 <h3 className="text-xl mb-3 text-center">Mobile Science Laboratory</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Converted shipping container laboratories</li>
@@ -454,7 +454,7 @@ export default function PacemExcellencePage() {
 
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardContent className="p-8">
-                <Users className="h-10 w-10 text-[#00A0DC] mx-auto mb-4" />
+                {/* <Users className="h-10 w-10 text-[#00A0DC] mx-auto mb-4" /> */}
                 <h3 className="text-xl mb-3 text-center">Teacher Training Workshops</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Train secondary school science teachers in modern lab techniques</li>
@@ -468,13 +468,13 @@ export default function PacemExcellencePage() {
             </Card>
           </div>
 
-          <div className="rounded-2xl overflow-hidden shadow-xl">
+          {/* <div className="rounded-2xl overflow-hidden shadow-xl">
             <img
               src={scholarImage}
               alt="Pacem Science Scholars - Recipients"
               className="w-full h-auto object-cover"
             />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -488,7 +488,7 @@ export default function PacemExcellencePage() {
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="text-center hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-8">
-                  <Shield className="h-10 w-10 text-[#0033A0] mx-auto mb-4" />
+                  {/* <Shield className="h-10 w-10 text-[#0033A0] mx-auto mb-4" /> */}
                   <h3 className="text-xl mb-3">Quality Assurance</h3>
                   <div className="space-y-2 text-muted-foreground">
                     <p className="text-sm">• 5 university laboratory partnerships</p>
@@ -502,7 +502,7 @@ export default function PacemExcellencePage() {
 
               <Card className="text-center hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-8">
-                  <Beaker className="h-10 w-10 text-[#00A0DC] mx-auto mb-4" />
+                  {/* <Beaker className="h-10 w-10 text-[#00A0DC] mx-auto mb-4" /> */}
                   <h3 className="text-xl mb-3">Research Impact</h3>
                   <div className="space-y-2 text-muted-foreground">
                     <p className="text-sm">• 5 university partnerships</p>
@@ -516,7 +516,7 @@ export default function PacemExcellencePage() {
 
               <Card className="text-center hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-8">
-                  <GraduationCap className="h-10 w-10 text-[#0033A0] mx-auto mb-4" />
+                  {/* <GraduationCap className="h-10 w-10 text-[#0033A0] mx-auto mb-4" /> */}
                   <h3 className="text-xl mb-3">STEM Education</h3>
                   <div className="space-y-2 text-muted-foreground">
                     <p className="text-sm">• 37 scholars enrolled (5 + 12 + 20 across three cohorts)</p>

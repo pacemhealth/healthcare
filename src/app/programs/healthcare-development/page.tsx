@@ -137,9 +137,9 @@ export default function HealthcareDevelopmentPage() {
             <Card className="border-t-4 border-t-[#0033A0]">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-[#0033A0] text-white flex items-center justify-center text-xl">
+                  {/* <div className="w-12 h-12 rounded-full bg-[#0033A0] text-white flex items-center justify-center text-xl">
                     1
-                  </div>
+                  </div> */}
                   <h3 className="text-2xl">CHW Training Academy</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
@@ -174,9 +174,9 @@ export default function HealthcareDevelopmentPage() {
             <Card className="border-t-4 border-t-[#00A0DC]">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-[#00A0DC] text-white flex items-center justify-center text-xl">
+                  {/* <div className="w-12 h-12 rounded-full bg-[#00A0DC] text-white flex items-center justify-center text-xl">
                     2
-                  </div>
+                  </div> */}
                   <h3 className="text-2xl">Community Education</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
@@ -211,9 +211,9 @@ export default function HealthcareDevelopmentPage() {
             <Card className="border-t-4 border-t-[#0033A0]">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-[#0033A0] text-white flex items-center justify-center text-xl">
+                  {/* <div className="w-12 h-12 rounded-full bg-[#0033A0] text-white flex items-center justify-center text-xl">
                     3
-                  </div>
+                  </div> */}
                   <h3 className="text-2xl">Provider Education</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
@@ -258,7 +258,7 @@ export default function HealthcareDevelopmentPage() {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <Heart className="h-6 w-6 text-[#0033A0] flex-shrink-0 mt-1" />
+                    {/* <Heart className="h-6 w-6 text-[#0033A0] flex-shrink-0 mt-1" /> */}
                     <div>
                       <h3 className="text-lg mb-2">Pneumonia</h3>
                       <p className="text-sm text-muted-foreground">
@@ -272,7 +272,7 @@ export default function HealthcareDevelopmentPage() {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <Target className="h-6 w-6 text-[#00A0DC] flex-shrink-0 mt-1" />
+                    {/* <Target className="h-6 w-6 text-[#00A0DC] flex-shrink-0 mt-1" /> */}
                     <div>
                       <h3 className="text-lg mb-2">Diabetes</h3>
                       <p className="text-sm text-muted-foreground">
@@ -286,7 +286,7 @@ export default function HealthcareDevelopmentPage() {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <TrendingUp className="h-6 w-6 text-[#0033A0] flex-shrink-0 mt-1" />
+                    {/* <TrendingUp className="h-6 w-6 text-[#0033A0] flex-shrink-0 mt-1" /> */}
                     <div>
                       <h3 className="text-lg mb-2">Cardiovascular Disease</h3>
                       <p className="text-sm text-muted-foreground">
@@ -315,11 +315,11 @@ export default function HealthcareDevelopmentPage() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="flex gap-4">
-              <div className="flex-shrink-0">
+              {/* <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-full bg-[#0033A0] text-white flex items-center justify-center">
-                  <GraduationCap className="h-6 w-6" />
+                  {/* <GraduationCap className="h-6 w-6" /> *
                 </div>
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-xl mb-2">CHW Selection & Training</h3>
                 <p className="text-muted-foreground">
@@ -329,11 +329,11 @@ export default function HealthcareDevelopmentPage() {
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0">
+              {/* <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-full bg-[#00A0DC] text-white flex items-center justify-center">
-                  <Radio className="h-6 w-6" />
+                  <Radio className="h-6 w-6" />  *
                 </div>
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-xl mb-2">Public Health Campaigns</h3>
                 <p className="text-muted-foreground">
@@ -343,11 +343,11 @@ export default function HealthcareDevelopmentPage() {
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0">
+              {/* <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-full bg-[#0033A0] text-white flex items-center justify-center">
-                  <Smartphone className="h-6 w-6" />
+                  {/* <Smartphone className="h-6 w-6" /> *
                 </div>
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-xl mb-2">Digital Support Systems</h3>
                 <p className="text-muted-foreground">
@@ -357,11 +357,11 @@ export default function HealthcareDevelopmentPage() {
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0">
+              {/* <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-full bg-[#00A0DC] text-white flex items-center justify-center">
-                  <TrendingUp className="h-6 w-6" />
+                  {/* <TrendingUp className="h-6 w-6" /> *
                 </div>
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-xl mb-2">Continuous Improvement</h3>
                 <p className="text-muted-foreground">
@@ -383,7 +383,7 @@ export default function HealthcareDevelopmentPage() {
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="text-center hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-8">
-                  <Users className="h-10 w-10 text-[#0033A0] mx-auto mb-4" />
+                  {/* <Users className="h-10 w-10 text-[#0033A0] mx-auto mb-4" /> */}
                   <h3 className="text-xl mb-3">Year 3 Targets</h3>
                   <div className="space-y-2 text-muted-foreground">
                     <p className="text-sm">• 2,000 CHWs trained</p>
@@ -396,7 +396,7 @@ export default function HealthcareDevelopmentPage() {
 
               <Card className="text-center hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-8">
-                  <TrendingUp className="h-10 w-10 text-[#00A0DC] mx-auto mb-4" />
+                  {/* <TrendingUp className="h-10 w-10 text-[#00A0DC] mx-auto mb-4" /> */}
                   <h3 className="text-xl mb-3">Health Outcomes</h3>
                   <div className="space-y-2 text-muted-foreground">
                     <p className="text-sm">• 25% reduction in child pneumonia mortality</p>
@@ -409,7 +409,7 @@ export default function HealthcareDevelopmentPage() {
 
               <Card className="text-center hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-8">
-                  <Target className="h-10 w-10 text-[#0033A0] mx-auto mb-4" />
+                  {/* <Target className="h-10 w-10 text-[#0033A0] mx-auto mb-4" /> */}
                   <h3 className="text-xl mb-3">Financial Sustainability</h3>
                   <div className="space-y-2 text-muted-foreground">
                     <p className="text-sm">• $1.5M annual revenue</p>

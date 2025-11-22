@@ -203,9 +203,9 @@ export default function About() {
             <Card className="border-t-4 border-[#0033A0] shadow-lg">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#0033A0] to-[#00A0DC] rounded-lg flex items-center justify-center flex-shrink-0">
+                  {/* <div className="w-12 h-12 bg-gradient-to-br from-[#0033A0] to-[#00A0DC] rounded-lg flex items-center justify-center flex-shrink-0">
                     <Target className="h-6 w-6 text-white" />
-                  </div>
+                  </div> */}
                   <h3 className="text-2xl text-[#0033A0]">Mission</h3>
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -218,9 +218,9 @@ export default function About() {
             <Card className="border-t-4 border-[#00A0DC] shadow-lg">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#00A0DC] to-[#0033A0] rounded-lg flex items-center justify-center flex-shrink-0">
+                  {/* <div className="w-12 h-12 bg-gradient-to-br from-[#00A0DC] to-[#0033A0] rounded-lg flex items-center justify-center flex-shrink-0">
                     <Lightbulb className="h-6 w-6 text-white" />
-                  </div>
+                  </div> */}
                   <h3 className="text-2xl text-[#00A0DC]">Vision</h3>
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -233,9 +233,9 @@ export default function About() {
             <Card className="border-t-4 border-[#0033A0] shadow-lg">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#0033A0] to-[#00A0DC] rounded-lg flex items-center justify-center flex-shrink-0">
+                  {/* <div className="w-12 h-12 bg-gradient-to-br from-[#0033A0] to-[#00A0DC] rounded-lg flex items-center justify-center flex-shrink-0">
                     <Heart className="h-6 w-6 text-white" />
-                  </div>
+                  </div> */}
                   <h3 className="text-2xl text-[#0033A0]">Values</h3>
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -379,11 +379,11 @@ export default function About() {
                 </TabsContent>
               </Tabs>
 
-              <div className="mt-10 p-6 bg-gradient-to-r from-gray-50 to-white rounded-lg border-l-4 border-[#00A0DC]">
-                <p className="text-base sm:text-lg text-gray-700 leading-relaxed italic">
+              {/* <div className="mt-10 p-6 bg-gradient-to-r from-gray-50 to-white rounded-lg border-l-4 border-[#00A0DC]">
+                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed italic">
                   Our team members make decisions, both big and small, with a focus on what is ethically right and what serves the greater good. Above all, we are committed to health security—for our partners, the communities we serve, and the future of African healthcare.
-                </p>
-              </div>
+                </p> 
+              </div> */}
             </div>
           </div>
         </div>
