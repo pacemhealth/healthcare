@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#2c2c3e] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12 items-start">
           {/* Pacem Health Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="inline-block mb-4">
@@ -17,10 +17,9 @@ export default function Footer() {
           <div>
             <h3 className="mb-4">Products</h3>
             <ul className="space-y-2 text-sm text-white/70">
-              <li><a href="#" className="hover:text-[#7C944B] transition">Healthcare IT</a></li>
-              <li><a href="#" className="hover:text-[#7C944B] transition">Clinical Solutions</a></li>
-              <li><a href="#" className="hover:text-[#7C944B] transition">Imaging Systems</a></li>
-              <li><a href="#" className="hover:text-[#7C944B] transition">Patient Monitoring</a></li>
+              <li><Link to="/products/division1" className="hover:text-[#7C944B] transition">Essential Healthcare Products</Link></li>
+              <li><Link to="/products/division2" className="hover:text-[#7C944B] transition">Pharmacy Services</Link></li>
+              <li><Link to="/products/division3" className="hover:text-[#7C944B] transition">Community Health Solutions</Link></li>
             </ul>
           </div>
 
@@ -28,8 +27,10 @@ export default function Footer() {
           <div>
             <h3 className="mb-4">Services</h3>
             <ul className="space-y-2 text-sm text-white/70">
-              <li><Link to="/core-solutions" className="hover:text-[#7C944B] transition">Core Health</Link></li>
-              <li><Link to="/advanced-solutions" className="hover:text-[#7C944B] transition">Advanced Systems</Link></li>
+              <li><Link to="/services/market-access" className="hover:text-[#7C944B] transition">Market Access</Link></li>
+              <li><Link to="/services/procurement-sourcing" className="hover:text-[#7C944B] transition">Procurement & Distribution</Link></li>
+              <li><Link to="/services/supply-chain-logistics" className="hover:text-[#7C944B] transition">Supply Chain & Logistics</Link></li>
+              <li><Link to="/services/regulatory" className="hover:text-[#7C944B] transition">Regulatory & Compliance</Link></li>
             </ul>
           </div>
 
@@ -73,14 +74,14 @@ export default function Footer() {
         </div>
 
         {/* Medical Disclaimer */}
-        <div className="pt-8 border-t border-white/10 mb-8">
+        {/* <div className="pt-8 border-t border-white/10 mb-8">
           <div className="bg-white/5 rounded-lg p-6">
             <h4 className="text-[#7C944B] mb-3 text-sm">Medical Disclaimer</h4>
             <p className="text-xs text-white/70 leading-relaxed">
               The information provided on this website is for educational and informational purposes only and is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. Never disregard professional medical advice or delay in seeking it because of something you have read on this website. If you think you may have a medical emergency, call your doctor or emergency services immediately. Pacem Health Inc. does not recommend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned on this website. Reliance on any information provided by Pacem Health Inc. is solely at your own risk.
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">

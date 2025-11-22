@@ -231,7 +231,7 @@ export default function HomePage() {
       </section>
 
       {/* Solutions Overview - Three Card Layout */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
@@ -242,204 +242,185 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Services Carousel */}
-          <div className="relative">
-            <Carousel
-              opts={{ 
-                align: "start",
-                loop: true,
-              }}
-              plugins={[Autoplay({ delay: 4000 })]}
-              className="w-full"
-            >
-              <CarouselContent className="-ml-4">
-                {/* Service 1: Market Access Services */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <Link to="/services/market-access" className="group block h-full">
-                    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
-                      <div className="relative h-48 sm:h-56 overflow-hidden bg-gradient-to-br from-[#5395f0] to-[#003057]">
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <TrendingUp className="h-16 w-16 text-white opacity-80" />
-                        </div>
-                      </div>
-                      <CardContent className="p-6 sm:p-8">
-                        <h3 className="text-xl mb-2">Market Access Services</h3>
-                        <p className="text-sm text-[#5395f0] mb-3">Your Gateway to African Healthcare Markets</p>
-                        <p className="text-sm text-muted-foreground mb-4">
-                          Comprehensive market access support for international manufacturers, managing sales, distribution, regulatory compliance, and market development across African healthcare markets.
-                        </p>
-                        <div className="flex items-center text-[#5395f0] group-hover:translate-x-2 transition-transform">
-                          <span className="text-sm mr-2">Explore Market Access Solutions</span>
-                          <ArrowRight className="h-4 w-4" />
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                </CarouselItem>
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {/* Service 1: Market Access Services */}
+            <Link to="/services/market-access" className="group block text-inherit">
+              <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 h-full bg-white rounded-2xl border-0">
+                <div className="relative h-64 sm:h-72 overflow-hidden bg-gradient-to-br from-[#5395f0] to-[#003057]">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <TrendingUp className="h-16 w-16 text-white opacity-80" />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 h-2 bg-[#00A99D]"></div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-[#00A99D] flex items-center justify-between gap-2 mb-3">
+                    Market Access Services
+                    <ArrowRight className="h-5 w-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                  </h3>
+                  <p className="text-sm mb-2 text-[#5395f0]">
+                    Your Gateway to African Healthcare Markets
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Comprehensive market access support for international manufacturers, managing sales, distribution, regulatory compliance, and market development across African healthcare markets.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
 
-                {/* Service 2: Procurement & Distribution */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <Link to="/services/procurement-sourcing" className="group block h-full">
-                    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
-                      <div className="relative h-48 sm:h-56 overflow-hidden">
-                        <img
-                          src={procurementSourcingImage}
-                          alt="Pharmaceutical procurement and inventory management"
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <CardContent className="p-6 sm:p-8">
-                        <h3 className="text-xl mb-2">Procurement & Distribution</h3>
-                        <p className="text-sm text-[#5395f0] mb-3">Strategic Sourcing & Wholesale Distribution</p>
-                        <p className="text-sm text-muted-foreground mb-4">
-                          Quality-assured health products from trusted global suppliers, plus GDP-compliant wholesale distribution to pharmacies, clinics, and hospitals across Africa.
-                        </p>
-                        <div className="flex items-center text-[#5395f0] group-hover:translate-x-2 transition-transform">
-                          <span className="text-sm mr-2">Explore Procurement & Distribution</span>
-                          <ArrowRight className="h-4 w-4" />
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                </CarouselItem>
+            {/* Service 2: Procurement & Distribution */}
+            <Link to="/services/procurement-sourcing" className="group block text-inherit">
+              <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 h-full bg-white rounded-2xl border-0">
+                <div className="relative h-64 sm:h-72 overflow-hidden">
+                  <img
+                    src={procurementSourcingImage}
+                    alt="Pharmaceutical procurement and inventory management"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 h-2 bg-[#00A99D]"></div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-[#00A99D] flex items-center justify-between gap-2 mb-3">
+                    Procurement & Distribution
+                    <ArrowRight className="h-5 w-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                  </h3>
+                  <p className="text-sm mb-2 text-[#5395f0]">
+                    Strategic Sourcing & Wholesale Distribution
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Quality-assured health products from trusted global suppliers, plus GDP-compliant wholesale distribution to pharmacies, clinics, and hospitals across Africa.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
 
-                {/* Service 3: Supply Chain & Logistics */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <Link to="/services/supply-chain-logistics" className="group block h-full">
-                    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
-                      <div className="relative h-48 sm:h-56 overflow-hidden">
-                        <img
-                          src={coreHealthImage}
-                          alt="Supply chain and logistics operations"
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <CardContent className="p-6 sm:p-8">
-                        <h3 className="text-xl mb-2">Supply Chain & Logistics</h3>
-                        <p className="text-sm text-[#5395f0] mb-3">Reliable End-to-End Delivery Across Africa</p>
-                        <p className="text-sm text-muted-foreground mb-4">
-                          Comprehensive supply chain management from forecasting to last-mile delivery, ensuring healthcare products reach even the most remote facilities reliably and on time.
-                        </p>
-                        <div className="flex items-center text-[#5395f0] group-hover:translate-x-2 transition-transform">
-                          <span className="text-sm mr-2">Strengthen Your Supply Chain</span>
-                          <ArrowRight className="h-4 w-4" />
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                </CarouselItem>
+            {/* Service 3: Supply Chain & Logistics */}
+            <Link to="/services/supply-chain-logistics" className="group block text-inherit">
+              <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 h-full bg-white rounded-2xl border-0">
+                <div className="relative h-64 sm:h-72 overflow-hidden">
+                  <img
+                    src={coreHealthImage}
+                    alt="Supply chain and logistics operations"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 h-2 bg-[#00A99D]"></div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-[#00A99D] flex items-center justify-between gap-2 mb-3">
+                    Supply Chain & Logistics
+                    <ArrowRight className="h-5 w-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                  </h3>
+                  <p className="text-sm mb-2 text-[#5395f0]">
+                    Reliable End-to-End Delivery Across Africa
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Comprehensive supply chain management from forecasting to last-mile delivery, ensuring healthcare products reach even the most remote facilities reliably and on time.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
 
-                {/* Service 5: Infrastructure & Planning */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <Link to="/services/infrastructure-planning" className="group block h-full">
-                    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
-                      <div className="relative h-48 sm:h-56 overflow-hidden bg-gradient-to-br from-[#5395f0] to-[#3a7cd6]">
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <Users className="h-16 w-16 text-white opacity-80" />
-                        </div>
-                      </div>
-                      <CardContent className="p-6 sm:p-8">
-                        <h3 className="text-xl mb-2">Infrastructure & Planning</h3>
-                        <p className="text-sm text-[#5395f0] mb-3">Building Sustainable Health Systems</p>
-                        <p className="text-sm text-muted-foreground mb-4">
-                          Healthcare infrastructure design and delivery that strengthens entire health systems—from facility planning and equipment sourcing to partnership development and sustainability planning.
-                        </p>
-                        <div className="flex items-center text-[#5395f0] group-hover:translate-x-2 transition-transform">
-                          <span className="text-sm mr-2">Explore Infrastructure Services</span>
-                          <ArrowRight className="h-4 w-4" />
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                </CarouselItem>
+            {/* Service 4: Infrastructure & Planning */}
+            <Link to="/services/infrastructure-planning" className="group block text-inherit">
+              <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 h-full bg-white rounded-2xl border-0">
+                <div className="relative h-64 sm:h-72 overflow-hidden bg-gradient-to-br from-[#5395f0] to-[#3a7cd6]">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Users className="h-16 w-16 text-white opacity-80" />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 h-2 bg-[#00A99D]"></div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-[#00A99D] flex items-center justify-between gap-2 mb-3">
+                    Infrastructure & Planning
+                    <ArrowRight className="h-5 w-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                  </h3>
+                  <p className="text-sm mb-2 text-[#5395f0]">
+                    Building Sustainable Health Systems
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Healthcare infrastructure design and delivery that strengthens entire health systems—from facility planning and equipment sourcing to partnership development and sustainability planning.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
 
-                {/* Service 4: Regulatory & Compliance Services */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <Link to="/services/regulatory" className="group block h-full">
-                    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
-                      <div className="relative h-48 sm:h-56 overflow-hidden">
-                        <img
-                          src={regulatoryServicesImage}
-                          alt="Regulatory services and compliance"
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <CardContent className="p-6 sm:p-8">
-                        <h3 className="text-xl mb-2">Regulatory & Compliance Services</h3>
-                        <p className="text-sm text-[#5395f0] mb-3">Navigate African Regulatory Complexity</p>
-                        <p className="text-sm text-muted-foreground mb-4">
-                          Product registration, compliance, pharmacovigilance, medical information, and quality management systems across 15+ African markets with comprehensive training support.
-                        </p>
-                        <div className="flex items-center text-[#5395f0] group-hover:translate-x-2 transition-transform">
-                          <span className="text-sm mr-2">Explore Regulatory Services</span>
-                          <ArrowRight className="h-4 w-4" />
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                </CarouselItem>
+            {/* Service 5: Regulatory & Compliance Services */}
+            <Link to="/services/regulatory" className="group block text-inherit">
+              <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 h-full bg-white rounded-2xl border-0">
+                <div className="relative h-64 sm:h-72 overflow-hidden">
+                  <img
+                    src={regulatoryServicesImage}
+                    alt="Regulatory services and compliance"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 h-2 bg-[#00A99D]"></div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-[#00A99D] flex items-center justify-between gap-2 mb-3">
+                    Regulatory & Compliance Services
+                    <ArrowRight className="h-5 w-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                  </h3>
+                  <p className="text-sm mb-2 text-[#5395f0]">
+                    Navigate African Regulatory Complexity
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Product registration, compliance, pharmacovigilance, medical information, and quality management systems across 15+ African markets with comprehensive training support.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
 
-                {/* Service 6: Digital Health & Technology Solutions */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <Link to="/advanced-solutions" className="group block h-full">
-                    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
-                      <div className="relative h-48 sm:h-56 overflow-hidden">
-                        <img
-                          src={advancedSolutionsImage}
-                          alt="Advanced digital health technology solutions"
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <CardContent className="p-6 sm:p-8">
-                        <h3 className="text-xl mb-2">Digital Health & Technology Solutions</h3>
-                        <p className="text-sm text-[#5395f0] mb-3">Technology-Powered Healthcare Transformation</p>
-                        <p className="text-sm text-muted-foreground mb-4">
-                          Integrated digital platforms, fleet management systems, mobile diagnostics, and health intelligence analytics that bring quality care to every corner of Africa.
-                        </p>
-                        <div className="flex items-center text-[#5395f0] group-hover:translate-x-2 transition-transform">
-                          <span className="text-sm mr-2">Explore Digital Solutions</span>
-                          <ArrowRight className="h-4 w-4" />
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                </CarouselItem>
+            {/* Service 6: Digital Health & Technology Solutions */}
+            <Link to="/advanced-solutions" className="group block text-inherit">
+              <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 h-full bg-white rounded-2xl border-0">
+                <div className="relative h-64 sm:h-72 overflow-hidden">
+                  <img
+                    src={advancedSolutionsImage}
+                    alt="Advanced digital health technology solutions"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 h-2 bg-[#00A99D]"></div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-[#00A99D] flex items-center justify-between gap-2 mb-3">
+                    Digital Health & Technology Solutions
+                    <ArrowRight className="h-5 w-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                  </h3>
+                  <p className="text-sm mb-2 text-[#5395f0]">
+                    Technology-Powered Healthcare Transformation
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Integrated digital platforms, fleet management systems, mobile diagnostics, and health intelligence analytics that bring quality care to every corner of Africa.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
 
-                {/* Quality Assurance - Featured */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <Link to="/services/quality-assurance" className="group block h-full">
-                    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
-                      <div className="relative h-48 sm:h-56 overflow-hidden">
-                        <img
-                          src={healthcareFacilitiesImage}
-                          alt="Quality assurance and pharmaceutical testing"
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <CardContent className="p-6 sm:p-8">
-                        <h3 className="text-xl mb-2">Quality Assurance</h3>
-                        <p className="text-sm text-[#5395f0] mb-3">Triple-Verified Quality. Every Product. Every Time.</p>
-                        <p className="text-sm text-muted-foreground mb-4">
-                          Our comprehensive quality framework ensures every pharmaceutical product meets international standards through WHO-prequalified suppliers, ISO-accredited testing, and rigorous documentation.
-                        </p>
-                        <div className="flex items-center text-[#5395f0] group-hover:translate-x-2 transition-transform">
-                          <span className="text-sm mr-2">Learn About Our Quality Process</span>
-                          <ArrowRight className="h-4 w-4" />
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                </CarouselItem>
-              </CarouselContent>
-              
-              {/* Navigation Arrows */}
-              {/* <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white hover:bg-gray-100 border-2 border-gray-300 shadow-lg">
-                <ChevronLeft className="h-6 w-6 text-[#003057]" />
-              </CarouselPrevious>
-              <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white hover:bg-gray-100 border-2 border-gray-300 shadow-lg">
-                <ChevronRight className="h-6 w-6 text-[#003057]" />
-              </CarouselNext> */}
-            </Carousel>
+            {/* Service 7: Quality Assurance */}
+            {/* <Link to="/services/quality-assurance" className="group block">
+              <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 h-full bg-white rounded-2xl border-0">
+                <div className="relative h-64 sm:h-72 overflow-hidden">
+                  <img
+                    src={healthcareFacilitiesImage}
+                    alt="Quality assurance and pharmaceutical testing"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 h-2 bg-[#00A99D]"></div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-[#00A99D] flex items-center justify-between gap-2 mb-3">
+                    Quality Assurance
+                    <ArrowRight className="h-5 w-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Triple-Verified Quality. Every Product. Every Time.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Our comprehensive quality framework ensures every pharmaceutical product meets international standards through WHO-prequalified suppliers, ISO-accredited testing, and rigorous documentation.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link> */}
           </div>
         </div>
       </section>
@@ -638,7 +619,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 md:gap-12">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 md:gap-12">
             <div className="text-center">
               <div className="text-3xl sm:text-4xl md:text-5xl text-[#5395f0] mb-2 sm:mb-3">WHO-approved</div>
               <p className="text-sm sm:text-base text-white/80 px-2">
@@ -676,7 +657,7 @@ export default function HomePage() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6">
                 Join the Mission. Build Systems That Save Lives.
               </h2>
-              <p className="text-muted-foreground text-base sm:text-lg mb-4 sm:mb-6">
+              <p className="text-muted-foreground text-sm sm:text-base mb-4 sm:mb-6">
                 Whether you're a supply chain expert, health tech innovator, or field operations leader — there's a place for you at Pacem Health.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base mb-6 sm:mb-8">
@@ -720,7 +701,7 @@ export default function HomePage() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6">
                 Partner with Us to Build Africa's Health Future.
               </h2>
-              <p className="text-muted-foreground text-base sm:text-lg mb-4 sm:mb-6">
+              <p className="text-muted-foreground text-sm sm:text-base mb-4 sm:mb-6">
                 Pacem Health is unlocking high-growth opportunities at the intersection of healthcare, infrastructure, and technology.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base mb-6 sm:mb-8">
@@ -746,7 +727,7 @@ export default function HomePage() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6">
                 We Build with Precision. We Scale with Purpose.
               </h2>
-              <p className="text-muted-foreground text-base sm:text-lg mb-4 sm:mb-6">
+              <p className="text-muted-foreground text-sm sm:text-base mb-4 sm:mb-6">
                 As a global health partner, Pacem Health delivers innovation with intent — blending medical expertise, logistics expertise, and people-first design to strengthen healthcare systems.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base mb-6 sm:mb-8">
@@ -778,7 +759,7 @@ export default function HomePage() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
             Stay Connected With Pacem Health
           </h2>
-          <p className="text-base sm:text-lg mb-6 sm:mb-8 text-white/90 px-2">
+          <p className="text-sm sm:text-lg mb-6 sm:mb-8 text-white/90 px-2">
             Be the first to hear about new initiatives, country launches, innovations, and partnership opportunities across Africa and beyond.
           </p>
           <Button size="lg" className="bg-white hover:bg-gray-100 text-[#5395f0] w-full sm:w-auto">

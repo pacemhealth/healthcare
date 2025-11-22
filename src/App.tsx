@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { lazy, Suspense } from 'react';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 // Eager load critical pages
 import HomePage from './app/page';
@@ -334,6 +335,7 @@ const LoadingFallback = () => (
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-background">
         <Navigation />
         <main className="flex-1">
