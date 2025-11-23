@@ -93,7 +93,7 @@ export default function SustainabilityPage() {
       {/* Our Approach Section */}
       <section className="bg-gradient-to-br from-[#1a1a3e] via-[#2d2d5f] to-[#1a1a3e] py-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl text-white text-center mb-12">
+          <h2 className="text-3xl text-white text-center mb-12">
             Our Sustainable Healthcare Approach
           </h2>
           
@@ -130,7 +130,7 @@ export default function SustainabilityPage() {
       {/* Commitments Section */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl text-[#4B2991] mb-12 text-center">
+          <h2 className="text-3xl text-[#4B2991] mb-12 text-center">
             Our Sustainability Commitments
           </h2>
           
@@ -157,7 +157,7 @@ export default function SustainabilityPage() {
       {/* Partnership Ecosystem */}
       <section className="bg-gradient-to-br from-[#1a1a3e] via-[#2d2d5f] to-[#1a1a3e] py-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl text-white text-center mb-6">
+          <h2 className="text-3xl text-white text-center mb-6">
             Building a Sustainable Healthcare Ecosystem
           </h2>
           <p className="text-gray-300 text-center max-w-3xl mx-auto mb-12">
@@ -188,7 +188,7 @@ export default function SustainabilityPage() {
       {/* SDG Alignment */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl text-[#4B2991] mb-8 text-center">
+          <h2 className="text-3xl text-[#4B2991] mb-8 text-center">
             Aligned with Global Sustainability Goals
           </h2>
           <p className="text-gray-600 text-center max-w-3xl mx-auto mb-12">
@@ -210,7 +210,7 @@ export default function SustainabilityPage() {
       {/* Related Content */}
       <section className="bg-gradient-to-br from-[#1a1a3e] via-[#2d2d5f] to-[#1a1a3e] py-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl text-white text-center mb-12">
+          <h2 className="text-3xl text-white text-center mb-12">
             Related Content
           </h2>
           
@@ -249,7 +249,7 @@ export default function SustainabilityPage() {
       {/* Call to Action */}
       <section className="py-20 px-6 bg-gradient-to-r from-[#4B2991] to-[#7C944B] text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl mb-6">
+          <h2 className="text-3xl mb-6">
             Join Us in Building Sustainable Healthcare Systems
           </h2>
           <p className="text-xl mb-8 text-white/90 leading-relaxed">

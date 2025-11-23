@@ -206,11 +206,12 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left - Text Content */}
             <div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-6 text-[#003057]">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4 ">
                 Discover Pacem Health
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 leading-relaxed">
-                Transforming healthcare delivery across Africa through quality medicines, reliable equipment, and sustainable health systems. At Pacem Health, we partner with governments, healthcare providers, and communities to ensure every patient has access to the care they need. From procurement to distribution, from infrastructure to training, we strengthen healthcare at every level. <strong>Press play and see how we're building Africa's healthcare future through innovation and partnership.</strong>
+                Transforming healthcare delivery across Africa through quality medicines, reliable equipment, and sustainable health systems. At Pacem Health, we partner with governments, healthcare providers, and communities to ensure every patient has access to the care they need. From procurement to distribution, from infrastructure to training, we strengthen healthcare at every level.
+                 <strong> Press play and see how we're building Africa's healthcare future through innovation and partnership.</strong>
               </p>
             </div>
 
@@ -234,7 +235,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4">
               How We Strengthen Healthcare Systems Across Africa
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg max-w-3xl mx-auto px-2">
@@ -429,7 +430,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4">
               Our Product Divisions
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg max-w-3xl mx-auto px-2">
@@ -514,7 +515,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">What's New at Pacem Health</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4">What's New at Pacem Health</h2>
             <p className="text-muted-foreground text-base sm:text-lg">
               Latest innovations, partnerships, and impact stories from across Africa.
             </p>
@@ -613,7 +614,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 md:py-20 bg-[#2c2c3e] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl mb-2">Pacem Health: Company at a Glance</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl mb-2">Pacem Health: Company at a Glance</h2>
             <p className="text-base sm:text-lg text-white/70 max-w-3xl mx-auto mt-3">
               Built to scale. Ready to deliver. Positioned for impact across Africa.
             </p>
