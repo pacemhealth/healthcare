@@ -41,7 +41,7 @@ export default function EnvironmentalResponsibilityPage() {
       {/* Key Environmental Priorities */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl text-[#4B2991] mb-12 text-center">
+          <h2 className="text-3xl text-[#4B2991] mb-12 text-center">
             Our Environmental Priorities
           </h2>
           
@@ -69,7 +69,7 @@ export default function EnvironmentalResponsibilityPage() {
       {/* Operational Initiatives */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl text-[#4B2991] mb-12 text-center">
+          <h2 className="text-3xl text-[#4B2991] mb-12 text-center">
             Environmental Initiatives Across Our Operations
           </h2>
           
@@ -114,7 +114,7 @@ export default function EnvironmentalResponsibilityPage() {
       {/* Measurement & Transparency */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl text-[#4B2991] mb-12 text-center">
+          <h2 className="text-3xl text-[#4B2991] mb-12 text-center">
             Measurement & Transparency
           </h2>
           
@@ -146,7 +146,7 @@ export default function EnvironmentalResponsibilityPage() {
       {/* Partnerships for Environmental Impact */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl text-[#4B2991] mb-6 text-center">
+          <h2 className="text-3xl text-[#4B2991] mb-6 text-center">
             Partnerships for Greater Environmental Impact
           </h2>
           
@@ -185,7 +185,7 @@ export default function EnvironmentalResponsibilityPage() {
       {/* Future Goals */}
       <section className="bg-gradient-to-br from-[#1a1a3e] via-[#2d2d5f] to-[#1a1a3e] py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl text-white mb-12 text-center">
+          <h2 className="text-3xl text-white mb-12 text-center">
             Our Environmental Goals for 2025-2027
           </h2>
           
